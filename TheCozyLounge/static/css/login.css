@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #343a40; 
+  background: #343a40 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,29 +11,29 @@ html {
 
 .user_card {
   width: 350px;
-  padding: 20px; 
-  height: 50%; 
+  padding: 20px;
+  height: 50%;
   background: white;
   margin: 50% 0px;
   position: relative;
   display: flex;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
-  border-radius: 10px; 
+  border-radius: 10px;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
 .form_container {
-  margin: 20px; 
+  margin: 20px;
 }
 
 #form-title {
   color: #343a40;
-  font-size: 24px; 
+  font-size: 24px;
   font-weight: bold;
-  text-align: center; 
-  margin-bottom: 20px; 
+  text-align: center;
+  margin-bottom: 20px;
 }
 
 .login_btn {
@@ -41,43 +41,43 @@ html {
   background: #411454 !important;
   color: white !important;
   border-radius: 30px;
-  margin: 15px 0; 
-  padding: 10px 0; 
+  margin: 15px 0;
+  padding: 10px 0;
   font-size: 16px;
   font-weight: bold;
   flex-direction: column;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 }
 
 .login_btn:focus {
-  box-shadow: none ;
-  outline: 0 ;
+  box-shadow: none !important;
+  outline: 0 !important;
 }
 
 .login_container {
-  padding: 20px; 
+  padding: 20px;
 }
 
 .input-group-text {
-  background: #411454 ;
-  color: white ;
-  border: 0 ;
-  border-radius: 0.25rem 0 0 0.25rem ;
+  background: #411454 !important;
+  color: white !important;
+  border: 0 !important;
+  border-radius: 0.25rem 0 0 0.25rem !important;
 }
 
 .input_user,
 .input_pass:focus {
-  box-shadow: none ;
-  outline: 0 ;
+  box-shadow: none !important;
+  outline: 0 !important;
 }
 
 #messages {
   background-color: #bbbbbb;
   color: white;
-  padding: 15px; 
+  padding: 15px;
   margin-top: 15px;
-  border-radius: 5px; 
-  font-size: 14px; 
-  text-align: center; 
+  border-radius: 5px;
+  font-size: 14px;
+  text-align: center;
 }
