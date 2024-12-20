@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background-color: #343a40 !important;
+  background-color: color(rgba 52 58 64 / 100%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,7 +17,7 @@ html {
   margin: 50% 0;
   position: relative;
   display: flex;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 20%), 0 6px 20px rgba(0, 0, 0, 19%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   flex-direction: column;
   align-items: center;
@@ -38,7 +38,7 @@ html {
 
 .login-btn {
   width: 100%;
-  background-color: rgba(65, 20, 84, 1);
+  background-color: color(rgba 65 20 84 / 100%);
   color: white;
   border-radius: 30px;
   margin: 15px 0;
@@ -61,7 +61,7 @@ html {
 }
 
 .input-group-text {
-  background-color: rgba(65, 20, 84, 1);
+  background-color: color(rgba 65 20 84 / 100%);
   color: white;
   border: 0;
   border-radius: 0.25rem 0 0 0.25rem;
