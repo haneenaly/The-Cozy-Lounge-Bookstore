@@ -1,9 +1,0 @@
-{
-  "rules": {
-    "length-zero-no-unit": null,
-    "color-function-notation": null,
-    "declaration-colon-space-after": "always-single-line",
-    "block-semicolon-space-before": null
-  }
-}
-
