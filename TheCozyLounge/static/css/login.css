@@ -3,7 +3,7 @@ html {
   margin: 0;
   padding: 0;
   height: 100%;
-  background: #343a40 !important;
+  background-color: #343a40 !important;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,11 +13,11 @@ html {
   width: 350px;
   padding: 20px;
   height: 50%;
-  background: white;
-  margin: 50% 0px;
+  background-color: white;
+  margin: 50% 0;
   position: relative;
   display: flex;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 20%), 0 6px 20px rgba(0, 0, 0, 19%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
   border-radius: 10px;
   flex-direction: column;
   align-items: center;
@@ -38,21 +38,22 @@ html {
 
 .login-btn {
   width: 100%;
-  background:  rgb(65, 20, 84);
-  color: white ;
+  background-color: rgb(65, 20, 84);
+  color: white;
   border-radius: 30px;
   margin: 15px 0;
   padding: 10px 0;
   font-size: 16px;
   font-weight: bold;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
 
 .login-btn:focus {
-  box-shadow: none ;
-  outline: 0 ;
+  box-shadow: none;
+  outline: 0;
 }
 
 .login-container {
@@ -60,16 +61,16 @@ html {
 }
 
 .input-group-text {
-  background: rgb(65, 20, 84) ;
-  color: white ;
-  border: 0 ;
-  border-radius: 0.25rem 0 0 0.25rem ;
+  background-color: rgb(65, 20, 84);
+  color: white;
+  border: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
 }
 
 .input-user,
 .input-pass:focus {
-  box-shadow: none ;
-  outline: 0 ;
+  box-shadow: none;
+  outline: 0;
 }
 
 #messages {
