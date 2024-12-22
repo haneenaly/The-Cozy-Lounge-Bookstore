@@ -1,4 +1,3 @@
-#To Handle views and redirects
 #render--> Renders an HTML pages with a context dictionary.
 #redirect--> Redirects users to another URL.(yro7 page eli ana 3ayzaha)
 #get_object_or_404--> get the object it not found error_404
@@ -85,6 +84,8 @@ def store(request):
 	return render(request, 'store/store.html', context)
 
 
+
+
 @login_required(login_url='login')
 def checkout(request):
 	#lma ados 3la checkout
@@ -97,9 +98,6 @@ def checkout(request):
 
 	context = {'items':items, 'order':order, 'cartItems':cartItems}
 	return render(request, 'store/checkout.html', context)
-
-
-
 
 
 def processOrder(request):
