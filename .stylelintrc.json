@@ -1,0 +1,9 @@
+{
+  "extends": "stylelint-config-standard",
+  "rules": {
+    "length-zero-no-unit": null,
+    "color-function-notation": null,
+    "declaration-colon-space-after": null,
+    "declaration-block-semicolon-space-before": null
+  }
+}
