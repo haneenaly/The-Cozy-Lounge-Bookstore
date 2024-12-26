@@ -1,0 +1,43 @@
+{% extends 'store/home.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
+    <title>{{ product.b_title }}</title>
+</head>
+
+<body>
+    <div class="box-element">
+        <a class="btn btn-outline-dark" href="{% url 'store' %}">&#x2190; Continue Shopping</a>
+
+        <h1>{{ product.b_title }}</h1>
+        <img src="{{ product.imageURL }}" alt="{{ product.b_title }}">
+        <p><strong>Author:</strong> {{ product.a_name }}</p>
+        <p><strong>Language:</strong> {{ product.b_Language }}</p>
+        <p><strong>About:</strong> {{ product.a_about }}</p>
+        <p><strong>Description:</strong> {{ product.b_description }}</p>
+        <p><strong>Genres:</strong> {{ product.b_genres }}</p>
+        <p><strong>Version:</strong> {{ product.b_version }}</p>
+        <p><strong>Number of Pages:</strong> {{ product.b_nu_of_pages }}</p>
+        <p><strong>Price:</strong> ${{ product.b_price }}</p>
+        <p><strong>Rating:</strong> {{ product.b_rate }}</p>
+        <p><strong>Year of Publication:</strong> {{ product.b_y_of_pub }}</p>
+        <p><strong>Sound Available:</strong> {{ product.b_sound|yesno:"Yes,No" }}</p>
+        <div style="display: flex; gap:1em; justify-content: space-between;">
+            <div>
+                <button data-product="{{product.id}}" data-action="add"
+                    class="btn btn-outline-secondary add-btn update-cart">Add to Cart</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+{% endblock content %}
