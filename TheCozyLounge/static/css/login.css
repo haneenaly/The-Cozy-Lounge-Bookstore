@@ -1,0 +1,63 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #343a40;
+}
+.user-card {
+  width: 350px;
+  margin-top: auto;
+  margin-bottom: auto;
+  background: #fff;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -moz-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 5px;
+}
+
+.form-container {
+  margin-top: 20px;
+}
+
+#form-title {
+  color: rgb(65, 20, 84);
+}
+
+.login-btn {
+  width: 100%;
+  background: rgb(65, 20, 84);
+  color: white;
+}
+.login-btn:focus {
+  box-shadow: none;
+  outline: 0px;
+}
+.login-container {
+  padding: 0 2rem;
+}
+.input-group-text {
+  background: rgb(65, 20, 84);
+  color: white;
+  border: 0;
+  border-radius: 0.25rem 0 0 0.25rem;
+}
+.input-user,
+.input-pass:focus {
+  box-shadow: none;
+  outline: 0px;
+}
+
+#messages {
+  background-color: grey;
+  color: #fff;
+  padding: 10px;
+  margin-top: 10px;
+}

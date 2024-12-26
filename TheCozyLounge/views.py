@@ -9,6 +9,8 @@ import datetime
 from django.contrib.auth.decorators import login_required
 from .models import *
 from django.contrib import messages
+from django.contrib.auth import authenticate,login,logout
+
 
 # Create your views here.
 def registerPage(request):
@@ -33,6 +35,21 @@ def logoutUser(request):
 	return redirect('login')
 
 
+def loginPage(request):
+	if request.user.is_authenticated:
+		return redirect('store')
+	else:
+		if request.method == 'POST':
+			username = request.POST.get('username')
+			password = request.POST.get('password')
 
+			user = authenticate(request , username = username, password = password)
 
+			if user is not None:
+				login(request,user)
+				return redirect('store')
+			else:
+				messages.info(request,'Username OR Password is incorrect')
+		context={}
+		return render(request, 'accounts/login.html',context)    
 
