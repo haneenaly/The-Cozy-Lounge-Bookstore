@@ -4,6 +4,8 @@ from django.shortcuts import render,redirect,get_object_or_404
 from django.contrib.auth import authenticate,login,logout
 #import the registrationForm form forms.py
 from .forms import CreateUserForm
+from .utils import cookieCart, cartData, guestOrder
+from .models import *
 import json
 import datetime
 from django.contrib.auth.decorators import login_required
@@ -51,6 +53,18 @@ def loginPage(request):
 		context={}
 		return render(request, 'accounts/login.html',context)   
 	
+
+@login_required(login_url='login')
+def store(request):
+	data = cartData(request)
+
+	cartItems = data['cartItems']
+	order = data['order']
+	items = data['items']
+
+	product = Product.objects.all()
+	context = {'product':product, 'cartItems':cartItems,'items':items, 'order':order}
+	return render(request, 'store/store.html', context)
 @login_required(login_url='login')
 def checkout(request):
 	print(request)
