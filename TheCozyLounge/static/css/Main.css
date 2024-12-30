@@ -1,19 +1,19 @@
 /* Main.css */
 
 body {
-  background: rgb(255, 0, 0);
+  background: color(display-p3 1 0 0 / 100%);
 }
 
 h1 {
-  color: rgb(0, 255, 0);
+  color: color(display-p3 0 1 0 / 100%);
 }
 
 p {
-  color: rgb(0, 0, 255);
+  color: color(display-p3 0 0 1 / 100%);
 }
 
 .search-bar {
-  background: rgb(200, 200, 200);
+  background: color(display-p3 0.784 0.784 0.784 / 100%);
   border: 1px solid #ccc;
 }
 
@@ -24,7 +24,7 @@ p {
 }
 
 .button-s {
-  background-color: rgb(100, 100, 100);
+  background-color: color(display-p3 0.392 0.392 0.392 / 100%);
   border: none;
   color: white;
   padding: 10px 20px;
@@ -37,7 +37,7 @@ p {
 }
 
 .btn {
-  background-color: rgb(0, 123, 255);
+  background-color: color(display-p3 0 0.482 1 / 100%);
   border: none;
   color: white;
   padding: 10px 20px;
