@@ -30,7 +30,7 @@ h6 {
 	border-radius: 0 0 4px 4px;
 }
 
-/* .bg-dark{
+/* .bg-dark {
 	background-color: #4f868c!important;
 } */
 
@@ -78,15 +78,12 @@ h6 {
 	padding-bottom: 10px;
 	margin-bottom: 10px;
 	border-bottom: 1px solid #ececec;
-
 }
 
 .quantity {
 	display: inline-block;
 	font-weight: 700;
 	padding-right: 10px;
-
-
 }
 
 .chg-quantity {
@@ -94,13 +91,12 @@ h6 {
 	cursor: pointer;
 	display: block;
 	margin-top: 5px;
-	transition: .1s;
+	transition: 0.1s;
 }
 
 .chg-quantity:hover {
-	opacity: .6;
+	opacity: 0.6;
 }
-
 
 .hidden {
 	display: none !important;
@@ -117,8 +113,6 @@ h6 {
 	justify-content: center;
 	align-items: center;
 	display: flex;
-	/* flex-direction: row; */
-	/* flex-wrap: wrap;   */
 	width: 50%;
 }
 
@@ -128,27 +122,16 @@ h6 {
 }
 
 .searchb {
-	border-radius: 30px 0px 0px 30px;
+	border-radius: 30px 0 0 30px;
 	height: 37px;
 	width: 500px;
-	margin: 10px 0px;
-	margin-left: 0px;
-	padding-left: 0px;
-	padding-right: 0px;
-	margin-right: 0px;
+	margin: 10px 0;
 	border: none;
-	transition: none;
-	/* Disable transition effects */
 }
 
-.searchb:hover {
-	outline: none;
-	/* Prevent browser focus outline */
-}
-
+.searchb:hover,
 .searchb:focus {
 	outline: none;
-	/* Prevent focus outline when clicked */
 }
 
 :root {
@@ -156,10 +139,8 @@ h6 {
 	--gray: #bbb;
 }
 
-
 .container-S {
-	position: flex;
-	/* width: 130px; */
+	display: flex;
 	height: 40px;
 	text-align: center;
 }
@@ -181,7 +162,7 @@ h6 {
 }
 
 .button-S:hover {
-	color: white;
+	color: #fff;
 	background: var(--purple);
 }
 
@@ -195,9 +176,9 @@ h6 {
 
 .btn-s {
 	width: 90px;
-	margin: 1.2px 0px;
+	margin: 1.2px 0;
 	height: 37.4px;
-	border-radius: 0px 30px 30px 0px;
+	border-radius: 0 30px 30px 0;
 }
 
 .btn {
