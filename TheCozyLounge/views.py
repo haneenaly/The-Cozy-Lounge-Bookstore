@@ -14,15 +14,11 @@ from django.contrib import messages
 from django.shortcuts import render, redirect
 
 @login_required(login_url='login')
-def search_view(request):
+def about_us(request):
+	about_content = AboutUs.objects.first() 
 	data = cartData(request)
-	
-	query = request.GET.get("q")
-	products = Product.objects.filter(b_title__icontains=query).order_by("b_y_of_pub")
-	
 	cartItems = data['cartItems']
 	order = data['order']
 	items = data['items']
-	
-	context ={"products":products,"query":query,'items':items, 'order':order, 'cartItems':cartItems}
-	return render(request, 'store/search.html', context)
+	context = {'items':items, 'order':order, 'cartItems':cartItems,'about_content': about_content }
+	return render(request, 'store/about_us.html', context)
